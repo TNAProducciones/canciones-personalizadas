@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tonathiu Real | Canciones Personalizadas con Calidad de Estudio</title>
+    <meta name="description" content="Convierte tu historia, boda, aniversario o negocio en una canción 100% original con calidad de estudio. Envíos a todo México.">
+    
+    <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        studio: {
+                            950: '#09090b',
+                            900: '#121216',
+                            800: '#1c1c22',
+                            700: '#272730',
+                        },
+                        amber: {
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                        },
+                        neon: {
+                            cyan: '#06b6d4',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #09090b;
+            color: #f4f4f5;
+            overflow-x: hidden;
+        }
+        .glass-card {
+            background: rgba(24, 24, 29, 0.75);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .gold-glow {
+            box-shadow: 0 0 30px -5px rgba(245, 158, 11, 0.25);
+        }
+        .cyan-glow {
+            box-shadow: 0 0 25px -5px rgba(6, 182, 212, 0.25);
+        }
+        /* Animación sutil de ecualizador */
+        @keyframes eq-bounce {
+            0%, 100% { transform: scaleY(0.3); }
+            50% { transform: scaleY(1); }
+        }
+        .eq-bar {
+            transform-origin: bottom;
+            animation: eq-bounce 1.2s ease-in-out infinite;
+        }
+        .eq-bar:nth-child(2) { animation-delay: 0.2s; }
+        .eq-bar:nth-child(3) { animation-delay: 0.4s; }
+        .eq-bar:nth-child(4) { animation-delay: 0.1s; }
+        .eq-bar:nth-child(5) { animation-delay: 0.3s; }
+    </style>
+</head>
+<body class="antialiased selection:bg-amber-500 selection:text-studio-950">
+
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-50 glass-card border-b border-white/10">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-2.5 group">
+                <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center text-studio-950 font-bold shadow-lg">
+                    <i class="fa-solid fa-wave-square"></i>
+                </div>
+                <div>
+                    <span class="font-display font-bold text-lg tracking-tight text-white block leading-none">TONATHIU REAL</span>
+                    <span class="text-[10px] uppercase tracking-widest text-amber-400 font-semibold">Estudio Musical</span>
+                </div>
+            </a>
+
+            <!-- Desktop Links -->
+            <div class="hidden md:flex items-center gap-6 text-sm font-medium text-zinc-300">
+                <a href="#como-funciona" class="hover:text-amber-400 transition">¿Cómo funciona?</a>
+                <a href="#paquetes" class="hover:text-amber-400 transition">Paquetes y Precios</a>
+                <a href="#extras" class="hover:text-amber-400 transition">Tu Propia Voz</a>
+                <a href="#legal-faq" class="hover:text-amber-400 transition">Preguntas y Términos</a>
+            </div>
+
+            <a href="#cotizar" class="bg-amber-500 hover:bg-amber-400 text-studio-950 font-bold text-xs sm:text-sm px-4 py-2.5 rounded-xl transition shadow-lg shadow-amber-500/20 flex items-center gap-2">
+                <i class="fa-brands fa-whatsapp text-base"></i>
+                <span>Cotizar Ahora</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Botón Flotante de WhatsApp -->
+    <a id="whatsappFloatingBtn" href="https://wa.me/5215580666756" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp" class="fixed bottom-5 left-5 z-40 px-4 py-3.5 rounded-full bg-gradient-to-r from-emerald-500 to-green-500 hover:from-emerald-400 hover:to-green-400 text-studio-950 font-display font-extrabold text-xs sm:text-sm shadow-2xl shadow-emerald-500/30 transition transform hover:scale-105 flex items-center gap-2">
+        <i class="fa-brands fa-whatsapp text-lg"></i>
+        <span>WhatsApp</span>
+    </a>
+
+    <!-- Hero Section -->
+    <header class="relative pt-14 pb-20 sm:pt-24 sm:pb-28 overflow-hidden">
+        <!-- Ambient Background Glows -->
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[300px] bg-amber-500/15 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute bottom-0 right-0 w-[350px] h-[250px] bg-neon-cyan/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center relative z-10">
+            <!-- Badge -->
+            <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs sm:text-sm text-amber-400 font-medium mb-6">
+                <span class="flex items-end gap-0.5 h-3 w-4">
+                    <span class="eq-bar w-0.5 h-full bg-amber-400 rounded-full"></span>
+                    <span class="eq-bar w-0.5 h-full bg-amber-400 rounded-full"></span>
+                    <span class="eq-bar w-0.5 h-full bg-amber-400 rounded-full"></span>
+                    <span class="eq-bar w-0.5 h-full bg-amber-400 rounded-full"></span>
+                </span>
+                <span>Producción Musical a la Medida • México</span>
+            </div>
+
+            <h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white leading-[1.12] mb-6">
+                Tu historia convertida en canción con <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-amber-500 to-yellow-200">calidad de estudio</span>
+            </h1>
+
+            <p class="text-base sm:text-lg text-zinc-400 max-w-2xl mx-auto mb-8 leading-relaxed">
+                Regala un recuerdo inolvidable que dura para toda la vida. Creamos canciones 100% personalizadas en el género que prefieras para <strong class="text-zinc-200">bodas, aniversarios, cumpleaños, XV años, dedicatorias especiales y jingles para negocios</strong>.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#cotizar" class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-gradient-to-r from-amber-500 to-amber-400 hover:from-amber-400 hover:to-amber-300 text-studio-950 font-display font-bold text-base shadow-xl shadow-amber-500/25 transition transform hover:-translate-y-0.5 flex items-center justify-center gap-2.5">
+                    <i class="fa-brands fa-whatsapp text-xl"></i>
+                    <span>Crear Mi Canción Ahora</span>
+                </a>
+                <a href="#paquetes" class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-studio-800 hover:bg-studio-700 border border-white/10 text-white font-semibold text-base transition flex items-center justify-center gap-2">
+                    <span>Ver Paquetes y Precios</span>
+                    <i class="fa-solid fa-arrow-down text-xs text-amber-400"></i>
+                </a>
+            </div>
+
+            <!-- Genre Pills -->
+            <div class="mt-12 pt-8 border-t border-white/5">
+                <p class="text-xs uppercase tracking-widest text-zinc-500 mb-3">Producimos en el género que tú elijas</p>
+                <div class="flex flex-wrap justify-center gap-2 text-xs text-zinc-300">
+                    <span class="px-3 py-1 rounded-lg bg-white/5 border border-white/5">🎸 Regional / Corrido / Banda</span>
+                    <span class="px-3 py-1 rounded-lg bg-white/5 border border-white/5">🎹 Balada Pop / Acústica</span>
+                    <span class="px-3 py-1 rounded-lg bg-white/5 border border-white/5">💃 Cumbia / Salsa</span>
+                    <span class="px-3 py-1 rounded-lg bg-white/5 border border-white/5">🔥 Urbano / Reggaetón</span>
+                    <span class="px-3 py-1 rounded-lg bg-white/5 border border-white/5">📻 Rock / Retro / Jingles</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ¿Cómo Funciona? Section -->
+    <section id="como-funciona" class="py-16 sm:py-24 bg-studio-900/60 border-y border-white/5">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="text-amber-400 font-semibold text-xs uppercase tracking-widest">Proceso Sencillo</span>
+                <h2 class="font-display text-3xl sm:text-4xl font-bold text-white mt-2">¿Cómo creamos tu canción?</h2>
+                <p class="text-zinc-400 text-sm sm:text-base mt-3">Sin complicaciones técnicas. Tú pones la emoción y los recuerdos; nosotros nos encargamos de la letra, la música y el sonido profesional.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+                <!-- Step 1 -->
+                <div class="glass-card rounded-2xl p-6 sm:p-8 relative">
+                    <div class="w-12 h-12 rounded-2xl bg-amber-500/15 border border-amber-500/30 text-amber-400 flex items-center justify-center font-display font-bold text-xl mb-5">
+                        1
+                    </div>
+                    <h3 class="font-display text-xl font-bold text-white mb-2">Cuéntanos tu historia y voz</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed">
+                        Eliges el género, el tipo de voz principal (femenina, masculina o a criterio del productor) y nos compartes nombres, fechas, anécdotas y fotos si aplica.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="glass-card rounded-2xl p-6 sm:p-8 relative">
+                    <div class="w-12 h-12 rounded-2xl bg-amber-500/15 border border-amber-500/30 text-amber-400 flex items-center justify-center font-display font-bold text-xl mb-5">
+                        2
+                    </div>
+                    <h3 class="font-display text-xl font-bold text-white mb-2">Letra y 2 Muestras de 25–30 seg</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed">
+                        Armamos y aprobamos la letra contigo. Luego te enviamos <strong>2 muestras cortas (25–30 seg)</strong> para que elijas tu favorita antes de masterizar y armar el video.
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="glass-card rounded-2xl p-6 sm:p-8 relative">
+                    <div class="w-12 h-12 rounded-2xl bg-neon-cyan/15 border border-neon-cyan/30 text-neon-cyan flex items-center justify-center font-display font-bold text-xl mb-5">
+                        3
+                    </div>
+                    <h3 class="font-display text-xl font-bold text-white mb-2">Masterización, Video y Entrega</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed">
+                        Al elegir tu versión favorita y liquidar el 50% restante, masterizamos el audio, montamos tu Lyric Video con tus fotos en CapCut y te entregamos todo listo.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing & Packages Section -->
+    <section id="paquetes" class="py-16 sm:py-24">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="text-amber-400 font-semibold text-xs uppercase tracking-widest">Inversión Transparente</span>
+                <h2 class="font-display text-3xl sm:text-4xl font-bold text-white mt-2">Paquetes y Precios</h2>
+                <p class="text-zinc-400 text-sm sm:text-base mt-3">Precios en Pesos Mexicanos (MXN). Iniciamos con <strong>50% de anticipo</strong>, enviamos <strong>2 muestras de 25–30 seg</strong> para que elijas y liquidas el 50% restante antes de recibir los archivos finales.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+                
+                <!-- Paquete 1: Esencial -->
+                <div class="glass-card rounded-3xl p-6 sm:p-8 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs font-bold uppercase tracking-wider text-zinc-400">Paquete 1</span>
+                            <span class="px-3 py-1 rounded-full bg-white/5 text-zinc-300 text-xs font-medium">Regalo Rápido</span>
+                        </div>
+                        <h3 class="font-display text-2xl font-bold text-white">Esencial</h3>
+                        <p class="text-zinc-400 text-xs mt-1">Ideal para un detalle emotivo o broma entre amigos.</p>
+                        
+                        <div class="my-6 pb-6 border-b border-white/10">
+                            <span class="font-display text-3xl sm:text-4xl font-extrabold text-white">$499 – $650</span>
+                            <span class="text-zinc-400 text-sm font-medium"> MXN</span>
+                        </div>
+
+                        <ul class="space-y-3.5 text-sm text-zinc-300 mb-8">
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-check text-amber-400 mt-1"></i>
+                                <span>Duración de <strong>1:30 a 2:00 min</strong> (2 versos + coro)</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-check text-amber-400 mt-1"></i>
+                                <span>Letra 100% personalizada y género a elegir</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-check text-amber-400 mt-1"></i>
+                                <span>Selección entre <strong>2 muestras de 25–30 seg</strong> antes de masterizar</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-check text-amber-400 mt-1"></i>
+                                <span>Audio masterizado en <strong>MP3 (320 kbps)</strong> + portada digital</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-check text-amber-400 mt-1"></i>
+                                <span>1 ajuste menor en letra antes de producir</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-zinc-400">
+                                <i class="fa-regular fa-clock text-zinc-400 mt-1"></i>
+                                <span>Entrega en <strong>48 a 72 horas hábiles</strong></span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button onclick="selectPackageAndScroll('esencial')" class="w-full py-3.5 px-4 rounded-xl bg-studio-800 hover:bg-studio-700 border border-white/10 text-white font-semibold text-sm transition cursor-pointer">
+                        Elegir Paquete Esencial
+                    </button>
+                </div>
+
+                <!-- Paquete 2: Viral / Evento (Destacado) -->
+                <div class="glass-card rounded-3xl p-6 sm:p-8 flex flex-col justify-between border-2 border-amber-500/70 gold-glow relative transform lg:-translate-y-2">
+                    <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-amber-500 to-amber-400 text-studio-950 font-display font-extrabold text-xs uppercase tracking-wider px-4 py-1 rounded-full shadow-lg">
+                        ⭐ Más Vendido
+                    </div>
+
+                    <div>
+                        <div class="flex items-center justify-between mb-4 mt-1">
+                            <span class="text-xs font-bold uppercase tracking-wider text-amber-400">Paquete 2</span>
+                            <span class="px-3 py-1 rounded-full bg-amber-500/15 text-amber-300 text-xs font-medium">Listo para Redes y Eventos</span>
+                        </div>
+                        <h3 class="font-display text-2xl font-bold text-white">Viral / Evento</h3>
+                        <p class="text-zinc-400 text-xs mt-1">El favorito para bodas, aniversarios, cumpleaños y TikTok/Reels.</p>
+                        
+                        <div class="my-6 pb-6 border-b border-white/10">
+                            <span class="font-display text-3xl sm:text-4xl font-extrabold text-amber-400">$950 – $1,250</span>
+                            <span class="text-zinc-400 text-sm font-medium"> MXN</span>
+                        </div>
+
+                        <ul class="space-y-3.5 text-sm text-zinc-200 mb-8">
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-check text-amber-400 mt-1"></i>
+                                <span>Canción completa de <strong>2:30 a 3:00 min</strong></span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-check text-amber-400 mt-1"></i>
+                                <span>Elección entre <strong>2 muestras de 25–30 seg</strong> antes de masterizar</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-check text-amber-400 mt-1"></i>
+                                <span>Audio alta fidelidad: <strong>WAV + MP3 masterizado</strong></span>
+                            </li>
+                            <li class="flex items-start gap-3 bg-amber-500/10 p-2.5 rounded-xl border border-amber-500/20">
+                                <i class="fa-solid fa-video text-amber-400 mt-1"></i>
+                                <span><strong>Lyric Video con tus fotos en CapCut:</strong> hasta 10 fotos tuyas con transiciones y letra animada (listo para TikTok, Reels y WhatsApp)</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-check text-amber-400 mt-1"></i>
+                                <span>Hasta 2 ajustes en letra antes de producir</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-zinc-300">
+                                <i class="fa-regular fa-clock text-amber-400 mt-1"></i>
+                                <span>Entrega en <strong>3 a 4 días hábiles</strong></span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button onclick="selectPackageAndScroll('viral')" class="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-amber-500 to-amber-400 hover:from-amber-400 hover:to-amber-300 text-studio-950 font-display font-bold text-sm shadow-lg shadow-amber-500/25 transition cursor-pointer">
+                        Elegir Paquete Viral / Evento
+                    </button>
+                </div>
+
+                <!-- Paquete 3: Artista / VIP -->
+                <div class="glass-card rounded-3xl p-6 sm:p-8 flex flex-col justify-between border border-neon-cyan/30">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs font-bold uppercase tracking-wider text-neon-cyan">Paquete 3</span>
+                            <span class="px-3 py-1 rounded-full bg-neon-cyan/10 text-neon-cyan text-xs font-medium">Lanzamiento Oficial</span>
+                        </div>
+                        <h3 class="font-display text-2xl font-bold text-white">Artista / VIP</h3>
+                        <p class="text-zinc-400 text-xs mt-1">Tu canción publicada oficialmente bajo perfil/sello de encargos.</p>
+                        
+                        <div class="my-6 pb-6 border-b border-white/10">
+                            <span class="font-display text-3xl sm:text-4xl font-extrabold text-white">$1,800 – $2,500</span>
+                            <span class="text-zinc-400 text-sm font-medium"> MXN</span>
+                        </div>
+
+                        <ul class="space-y-3.5 text-sm text-zinc-300 mb-8">
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-check text-neon-cyan mt-1"></i>
+                                <span>Canción extendida de <strong>3:00 a 3:30 min</strong> + asesoría creativa</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-check text-neon-cyan mt-1"></i>
+                                <span><strong>WAV + MP3 + Pista Instrumental</strong> (versión karaoke)</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-check text-neon-cyan mt-1"></i>
+                                <span><strong>Lyric Video con tus fotos en CapCut</strong> + Portada profesional</span>
+                            </li>
+                            <li class="flex items-start gap-3 bg-neon-cyan/10 p-2.5 rounded-xl border border-neon-cyan/20">
+                                <i class="fa-brands fa-spotify text-neon-cyan mt-1 text-base"></i>
+                                <span><strong>Subida a Spotify bajo perfil/sello de encargos</strong> (sin mezclar con catálogo artístico personal) + TikTok/IG</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-check text-neon-cyan mt-1"></i>
+                                <span>Hasta 2 ajustes en letra + 1 ajuste de mezcla</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-zinc-400">
+                                <i class="fa-regular fa-clock text-neon-cyan mt-1"></i>
+                                <span>Entrega en <strong>5 a 7 días hábiles</strong></span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button onclick="selectPackageAndScroll('vip')" class="w-full py-3.5 px-4 rounded-xl bg-studio-800 hover:bg-neon-cyan/20 border border-neon-cyan/40 text-white font-semibold text-sm transition cursor-pointer">
+                        Elegir Paquete Artista / VIP
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Extras / Upsells Section -->
+    <section id="extras" class="py-16 sm:py-24 bg-studio-900/60 border-y border-white/5">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="text-neon-cyan font-semibold text-xs uppercase tracking-widest">Personalización Avanzada</span>
+                <h2 class="font-display text-3xl sm:text-4xl font-bold text-white mt-2">Extras y Servicios Especiales</h2>
+                <p class="text-zinc-400 text-sm sm:text-base mt-3">Potencia cualquier paquete con nuestras opciones exclusivas.</p>
+            </div>
+
+            <!-- Star Feature: Tu Propia Voz -->
+            <div class="glass-card rounded-3xl p-6 sm:p-10 border border-neon-cyan/40 cyan-glow mb-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-8">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-neon-cyan/15 text-neon-cyan text-xs font-bold uppercase tracking-wider mb-3">
+                            <i class="fa-solid fa-microphone-lines"></i>
+                            <span>Extra Estrella • Exclusivo</span>
+                        </div>
+                        <h3 class="font-display text-2xl sm:text-3xl font-bold text-white mb-3">
+                            ¡Cántala con Tu Propia Voz! <span class="text-neon-cyan">(+$450 MXN)</span>
+                        </h3>
+                        <p class="text-zinc-300 text-sm sm:text-base leading-relaxed mb-4">
+                            Envíanos una <strong>referencia vocal de 30 a 45 segundos en cuarto silencioso</strong> y mediante modelado vocal en estudio integramos tu timbre para que la canción suene como si la cantaras tú mismo.
+                        </p>
+                        <div class="bg-studio-950/80 border border-white/10 rounded-2xl p-4 text-xs text-zinc-400 space-y-1.5">
+                            <p class="text-zinc-200 font-semibold"><i class="fa-solid fa-circle-info text-amber-400 mr-1.5"></i> Requisitos obligatorios para este extra:</p>
+                            <p>• <strong>Referencia vocal de 30–45 seg en cuarto silencioso:</strong> habitación cerrada sin ruido ambiente, música ni eco.</p>
+                            <p>• <strong>Uso ético y exclusivo:</strong> únicamente aceptamos la voz del cliente que contrata. Prohibido enviar audios de famosos o terceras personas sin consentimiento.</p>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-4 flex flex-col items-center justify-center text-center bg-studio-950/60 rounded-2xl p-6 border border-white/5">
+                        <div class="w-16 h-16 rounded-full bg-neon-cyan/15 text-neon-cyan flex items-center justify-center text-2xl mb-4">
+                            <i class="fa-solid fa-sliders"></i>
+                        </div>
+                        <p class="text-sm font-semibold text-white mb-1">Agrégalo a cualquier paquete</p>
+                        <p class="text-xs text-zinc-400 mb-5">Sorprende a tu pareja, mamá o amigos escuchando tu propia voz.</p>
+                        <button onclick="selectExtraAndScroll('voz')" class="w-full py-3 px-4 rounded-xl bg-neon-cyan hover:bg-cyan-400 text-studio-950 font-display font-bold text-sm transition cursor-pointer">
+                            Incluir Mi Voz (+$450 MXN)
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other Extras Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Express -->
+                <div class="glass-card rounded-2xl p-6 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="w-10 h-10 rounded-xl bg-amber-500/15 text-amber-400 flex items-center justify-center">
+                                <i class="fa-solid fa-bolt"></i>
+                            </span>
+                            <span class="font-display font-bold text-lg text-amber-400">+$300 MXN</span>
+                        </div>
+                        <h4 class="font-display font-bold text-lg text-white mb-1">Entrega Express 24h</h4>
+                        <p class="text-zinc-400 text-xs leading-relaxed">Priorizamos tu pedido en estudio para entregarte en menos de 24 horas tras aprobar la letra.</p>
+                    </div>
+                    <button type="button" onclick="selectExtraAndScroll('express')" class="mt-4 w-full py-2 px-3 rounded-xl bg-studio-800 hover:bg-studio-700 border border-white/10 text-xs font-semibold text-zinc-200 transition cursor-pointer">
+                        Agregar Express
+                    </button>
+                </div>
+
+                <!-- Instrumental -->
+                <div class="glass-card rounded-2xl p-6 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="w-10 h-10 rounded-xl bg-amber-500/15 text-amber-400 flex items-center justify-center">
+                                <i class="fa-solid fa-music"></i>
+                            </span>
+                            <span class="font-display font-bold text-lg text-amber-400">+$200 MXN</span>
+                        </div>
+                        <h4 class="font-display font-bold text-lg text-white mb-1">Pista Instrumental</h4>
+                        <p class="text-zinc-400 text-xs leading-relaxed">Versión karaoke sin voz principal para cantarla en vivo en tu evento. <em>(Incluida en VIP)</em>.</p>
+                    </div>
+                    <button type="button" onclick="selectExtraAndScroll('instrumental')" class="mt-4 w-full py-2 px-3 rounded-xl bg-studio-800 hover:bg-studio-700 border border-white/10 text-xs font-semibold text-zinc-200 transition cursor-pointer">
+                        Agregar Instrumental
+                    </button>
+                </div>
+
+                <!-- Segunda versión completa masterizada -->
+                <div class="glass-card rounded-2xl p-6 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="w-10 h-10 rounded-xl bg-neon-cyan/15 text-neon-cyan flex items-center justify-center">
+                                <i class="fa-solid fa-compact-disc"></i>
+                            </span>
+                            <span class="font-display font-bold text-lg text-neon-cyan">+$250 MXN</span>
+                        </div>
+                        <h4 class="font-display font-bold text-lg text-white mb-1">Segunda Versión Completa Masterizada</h4>
+                        <p class="text-zinc-400 text-xs leading-relaxed">¿Te gustaron las 2 muestras de 25–30 seg? Llévate también la segunda propuesta completa y masterizada.</p>
+                    </div>
+                    <button type="button" onclick="selectExtraAndScroll('segundaVersion')" class="mt-4 w-full py-2 px-3 rounded-xl bg-studio-800 hover:bg-studio-700 border border-white/10 text-xs font-semibold text-zinc-200 transition cursor-pointer">
+                        Agregar 2da Versión
+                    </button>
+                </div>
+
+                <!-- Jingles -->
+                <div class="glass-card rounded-2xl p-6 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="w-10 h-10 rounded-xl bg-amber-500/15 text-amber-400 flex items-center justify-center">
+                                <i class="fa-solid fa-store"></i>
+                            </span>
+                            <span class="font-display font-bold text-lg text-amber-400">Desde $1,500 MXN</span>
+                        </div>
+                        <h4 class="font-display font-bold text-lg text-white mb-1">Jingle Comercial</h4>
+                        <p class="text-zinc-400 text-xs leading-relaxed">Canción pegajosa para identificar tu negocio, marca local o canal en redes y pauta.</p>
+                    </div>
+                    <button type="button" onclick="selectPackageAndScroll('jingle')" class="mt-4 w-full py-2 px-3 rounded-xl bg-studio-800 hover:bg-studio-700 border border-white/10 text-xs font-semibold text-zinc-200 transition cursor-pointer">
+                        Cotizar Jingle
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ & Legal Terms Accordion -->
+    <section id="legal-faq" class="py-16 sm:py-24">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-12">
+                <span class="text-amber-400 font-semibold text-xs uppercase tracking-widest">Transparencia Total</span>
+                <h2 class="font-display text-3xl sm:text-4xl font-bold text-white mt-2">Preguntas Frecuentes y Términos Legales</h2>
+                <p class="text-zinc-400 text-sm sm:text-base mt-3">Todo lo que debes saber sobre muestras, pagos, Spotify y derechos de uso.</p>
+            </div>
+
+            <div class="space-y-4" id="accordion-container">
+                
+                <!-- Item 1: Proceso y 2 muestras -->
+                <div class="glass-card rounded-2xl overflow-hidden">
+                    <button class="accordion-btn w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-display font-bold text-white hover:text-amber-400 transition cursor-pointer">
+                        <span>1. Proceso de producción y elección entre 2 muestras (25–30 seg)</span>
+                        <i class="fa-solid fa-chevron-down text-amber-400 text-sm transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content hidden px-6 pb-5 text-sm text-zinc-300 leading-relaxed border-t border-white/5 pt-4">
+                        Primero redactamos y afinamos la letra contigo. Una vez aprobada, generamos las propuestas y te enviamos <strong>2 muestras cortas de 25 a 30 segundos</strong> para que escuches el ritmo, la intención y el tono. Tú eliges cuál prefieres antes de pasar a la masterización final y al montaje del Lyric Video con tus fotos en CapCut (y si te enamoran ambas, puedes pedir la segunda versión completa masterizada por +$250 MXN).
+                    </div>
+                </div>
+
+                <!-- Item 2: Anticipo 50% / 50% -->
+                <div class="glass-card rounded-2xl overflow-hidden">
+                    <button class="accordion-btn w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-display font-bold text-white hover:text-amber-400 transition cursor-pointer">
+                        <span>2. Forma de pago: Anticipo 50% y 50% contra muestra</span>
+                        <i class="fa-solid fa-chevron-down text-amber-400 text-sm transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content hidden px-6 pb-5 text-sm text-zinc-300 leading-relaxed border-t border-white/5 pt-4 space-y-2">
+                        <p>• <strong>50% de anticipo:</strong> Se solicita al confirmar tu pedido para apartar lugar en estudio y redactar tu letra personalizada.</p>
+                        <p>• <strong>50% restante contra muestra:</strong> Te enviamos las 2 muestras cortas (25–30 seg) para que elijas tu favorita; una vez aprobada y liquidado el 50% restante, entregamos los archivos finales masterizados y el video.</p>
+                        <p>• <strong>Aprobación de letra:</strong> Tras aprobar la letra por escrito, cualquier cambio que requiera regenerar la canción tiene costo adicional.</p>
+                    </div>
+                </div>
+
+                <!-- Item 3: Spotify, permiso de uso e INDAUTOR -->
+                <div class="glass-card rounded-2xl overflow-hidden">
+                    <button class="accordion-btn w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-display font-bold text-white hover:text-amber-400 transition cursor-pointer">
+                        <span>3. Distribución en Spotify, permiso de uso y registro ante INDAUTOR</span>
+                        <i class="fa-solid fa-chevron-down text-amber-400 text-sm transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content hidden px-6 pb-5 text-sm text-zinc-300 leading-relaxed border-t border-white/5 pt-4 space-y-2">
+                        <p>• <strong>Subida bajo perfil/sello de encargos:</strong> En el Paquete Artista / VIP subimos la canción a Spotify y plataformas desde nuestra cuenta de distribución bajo un <strong>perfil o sello de encargos</strong>, sin mezclarla con el catálogo artístico personal del productor.</p>
+                        <p>• <strong>Permiso de uso:</strong> Se te otorga un permiso de uso no exclusivo para reproducción, difusión en redes sociales y eventos dentro del alcance de tu paquete.</p>
+                        <p>• <strong>Aclaración sobre INDAUTOR:</strong> El servicio <strong>no incluye registro de autoría ante INDAUTOR</strong> ni certificado de obra registrable, ya que se trata de producción asistida por IA. Si un cliente requiere composición humana tradicional registrable ante INDAUTOR, se cotiza y contrata como un servicio aparte.</p>
+                    </div>
+                </div>
+
+                <!-- Item 4: Uso ético de voz propia -->
+                <div class="glass-card rounded-2xl overflow-hidden">
+                    <button class="accordion-btn w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-display font-bold text-white hover:text-amber-400 transition cursor-pointer">
+                        <span>4. Política de uso ético de "Tu Propia Voz"</span>
+                        <i class="fa-solid fa-chevron-down text-amber-400 text-sm transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content hidden px-6 pb-5 text-sm text-zinc-300 leading-relaxed border-t border-white/5 pt-4">
+                        El extra de voz personalizada requiere una <strong>referencia vocal de 30 a 45 segundos en cuarto silencioso</strong> y se aplica <strong>exclusivamente con la voz del cliente que contrata</strong>. Está estrictamente prohibido enviar audios de cantantes famosos o terceras personas sin consentimiento.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Quote / WhatsApp Generator -->
+    <section id="cotizar" class="py-16 sm:py-24 bg-gradient-to-b from-studio-900 to-studio-950 border-t border-white/10">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6">
+            <div class="glass-card rounded-3xl p-6 sm:p-10 border border-amber-500/30 gold-glow">
+                <div class="text-center mb-8">
+                    <span class="inline-block px-3 py-1 rounded-full bg-amber-500/15 text-amber-400 text-xs font-bold uppercase tracking-wider mb-2">
+                        Paso Final • Cotización Instantánea
+                    </span>
+                    <h2 class="font-display text-2xl sm:text-4xl font-bold text-white">Arma tu pedido y envía por WhatsApp</h2>
+                    <p class="text-zinc-400 text-sm mt-2">Selecciona paquete, voz principal y extras para armar tu mensaje directo a WhatsApp.</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+                    <!-- Form Inputs -->
+                    <div class="lg:col-span-7 space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-zinc-400 mb-1.5">Tu Nombre</label>
+                                <input type="text" id="clientName" placeholder="Ej. Carlos Mendoza" class="w-full px-4 py-3 rounded-xl bg-studio-950 border border-white/10 text-white text-sm focus:outline-none focus:border-amber-500 transition">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-zinc-400 mb-1.5">Ocasión / Género</label>
+                                <input type="text" id="occasionGenre" placeholder="Ej. Aniversario • Cumbia o Balada" class="w-full px-4 py-3 rounded-xl bg-studio-950 border border-white/10 text-white text-sm focus:outline-none focus:border-amber-500 transition">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-zinc-400 mb-1.5">Paquete</label>
+                                <select id="packageSelect" class="w-full px-4 py-3 rounded-xl bg-studio-950 border border-white/10 text-white text-sm focus:outline-none focus:border-amber-500 transition">
+                                    <option value="esencial">Paquete 1: Esencial ($499 – $650 MXN)</option>
+                                    <option value="viral" selected>⭐ Paquete 2: Viral / Evento ($950 – $1,250 MXN)</option>
+                                    <option value="vip">Paquete 3: Artista / VIP ($1,800 – $2,500 MXN)</option>
+                                    <option value="jingle">Jingle Comercial (Desde $1,500 MXN)</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-zinc-400 mb-1.5">Voz Principal</label>
+                                <select id="voiceOption" class="w-full px-4 py-3 rounded-xl bg-studio-950 border border-white/10 text-white text-sm focus:outline-none focus:border-amber-500 transition">
+                                    <option value="Femenina">🎙️ Femenina</option>
+                                    <option value="Masculina">🎙️ Masculina</option>
+                                    <option value="Indistinta / Según el género" selected>🎚️ Indistinta / Según el género</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Extras Checkboxes -->
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-zinc-400 mb-2">Extras / Upsells Opcionales</label>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                                <label class="flex items-center gap-2.5 p-3 rounded-xl bg-studio-950 border border-white/10 text-xs text-zinc-200 cursor-pointer hover:border-neon-cyan/50 transition">
+                                    <input type="checkbox" id="extraVoz" class="extra-checkbox accent-cyan-400 w-4 h-4">
+                                    <span>Tu Propia Voz (30–45 seg silencio) <strong>+$450</strong></span>
+                                </label>
+                                <label class="flex items-center gap-2.5 p-3 rounded-xl bg-studio-950 border border-white/10 text-xs text-zinc-200 cursor-pointer hover:border-amber-500/50 transition">
+                                    <input type="checkbox" id="extraExpress" class="extra-checkbox accent-amber-500 w-4 h-4">
+                                    <span>Entrega Express 24h <strong>+$300</strong></span>
+                                </label>
+                                <label class="flex items-center gap-2.5 p-3 rounded-xl bg-studio-950 border border-white/10 text-xs text-zinc-200 cursor-pointer hover:border-amber-500/50 transition">
+                                    <input type="checkbox" id="extraInstrumental" class="extra-checkbox accent-amber-500 w-4 h-4">
+                                    <span>Pista Instrumental <strong>+$200</strong></span>
+                                </label>
+                                <label class="flex items-center gap-2.5 p-3 rounded-xl bg-studio-950 border border-white/10 text-xs text-zinc-200 cursor-pointer hover:border-neon-cyan/50 transition">
+                                    <input type="checkbox" id="extraSegundaVersion" class="extra-checkbox accent-cyan-400 w-4 h-4">
+                                    <span>2da versión completa masterizada <strong>+$250</strong></span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-zinc-400 mb-1.5">Detalles de tu Historia</label>
+                            <textarea id="storySnippet" rows="2" placeholder="Nombres, fechas, apodos o anécdota clave..." class="w-full px-4 py-3 rounded-xl bg-studio-950 border border-white/10 text-white text-sm focus:outline-none focus:border-amber-500 transition"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Live Preview & Action -->
+                    <div class="lg:col-span-5 flex flex-col justify-between bg-studio-950/90 rounded-2xl p-5 border border-white/10">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="text-xs font-bold uppercase tracking-wider text-amber-400 flex items-center gap-1.5">
+                                    <i class="fa-brands fa-whatsapp text-base"></i> Mensaje para WhatsApp
+                                </span>
+                                <span id="estimatedTotalBadge" class="px-2.5 py-0.5 rounded-full bg-amber-500/15 text-amber-300 text-[11px] font-bold"></span>
+                            </div>
+                            <div id="messagePreview" class="bg-studio-900 rounded-xl p-4 text-xs text-zinc-300 font-mono whitespace-pre-line border border-white/5 leading-relaxed min-h-[220px]"></div>
+                        </div>
+
+                        <div class="mt-5 space-y-3">
+                            <a id="whatsappDirectBtn" href="https://wa.me/5215580666756" target="_blank" rel="noopener noreferrer" class="w-full py-4 px-5 rounded-xl bg-gradient-to-r from-emerald-500 to-green-500 hover:from-emerald-400 hover:to-green-400 text-studio-950 font-display font-extrabold text-sm sm:text-base shadow-lg shadow-emerald-500/20 transition flex items-center justify-center gap-2.5">
+                                <i class="fa-brands fa-whatsapp text-xl"></i>
+                                <span>Abrir WhatsApp con Pedido</span>
+                            </a>
+
+                            <button type="button" onclick="copyMessageToClipboard()" class="w-full py-3 px-4 rounded-xl bg-studio-800 hover:bg-studio-700 border border-white/10 text-zinc-200 font-medium text-xs transition flex items-center justify-center gap-2 cursor-pointer">
+                                <i class="fa-regular fa-copy"></i>
+                                <span>Copiar mensaje</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 border-t border-white/10 text-center text-xs text-zinc-500">
+        <div class="max-w-6xl mx-auto px-4">
+            <p class="font-display font-bold text-zinc-300 text-sm mb-1">TONATHIU REAL • Canciones Personalizadas para Toda Ocasión</p>
+            <p class="mb-4">Letra a medida, selección entre 2 muestras (25–30 seg), masterización digital y Lyric Video en CapCut.</p>
+            <p class="text-[11px] text-zinc-600">
+                Anticipo 50% / 50% contra muestra. Distribución en Spotify bajo perfil/sello de encargos (sin registro INDAUTOR).
+            </p>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="fixed bottom-5 right-5 z-50 transform translate-y-20 opacity-0 transition-all duration-300 bg-amber-500 text-studio-950 font-bold text-xs sm:text-sm px-5 py-3 rounded-xl shadow-2xl flex items-center gap-2">
+        <i class="fa-solid fa-circle-check"></i>
+        <span id="toastText">¡Mensaje copiado al portapapeles!</span>
+    </div>
+
+    <script>
+        // Número fijo de WhatsApp del estudio (México: 521 + 5580666756)
+        const WHATSAPP_PHONE = '5215580666756';
+
+        const PACKAGE_META = {
+            esencial: { label: 'Paquete 1: Esencial ($499 – $650 MXN)', min: 499, max: 650 },
+            viral:    { label: 'Paquete 2: Viral / Evento ($950 – $1,250 MXN)', min: 950, max: 1250 },
+            vip:      { label: 'Paquete 3: Artista / VIP ($1,800 – $2,500 MXN)', min: 1800, max: 2500 },
+            jingle:   { label: 'Jingle Comercial (Desde $1,500 MXN)', min: 1500, max: 1500 }
+        };
+
+        const EXTRAS_META = [
+            { id: 'extraVoz',            label: 'Tu Propia Voz (30–45 seg silencio)', price: 450 },
+            { id: 'extraExpress',        label: 'Entrega Express 24h', price: 300 },
+            { id: 'extraInstrumental',   label: 'Pista Instrumental', price: 200 },
+            { id: 'extraSegundaVersion', label: 'Segunda versión completa masterizada', price: 250 }
+        ];
+
+        // Elements
+        const whatsappFloatingBtn = document.getElementById('whatsappFloatingBtn');
+        const clientNameEl = document.getElementById('clientName');
+        const occasionGenreEl = document.getElementById('occasionGenre');
+        const packageSelectEl = document.getElementById('packageSelect');
+        const voiceOptionEl = document.getElementById('voiceOption');
+        const storySnippetEl = document.getElementById('storySnippet');
+        const messagePreviewEl = document.getElementById('messagePreview');
+        const estimatedTotalBadge = document.getElementById('estimatedTotalBadge');
+        const whatsappDirectBtn = document.getElementById('whatsappDirectBtn');
+
+        function updateQuoteMessage() {
+            const name = clientNameEl.value.trim() || 'Cliente';
+            const occGenre = occasionGenreEl.value.trim() || 'Por definir con el productor';
+            const pkgKey = packageSelectEl.value;
+            const pkg = PACKAGE_META[pkgKey] || PACKAGE_META.viral;
+            const voice = voiceOptionEl.value;
+            const story = storySnippetEl.value.trim() || 'Listo para recibir el cuestionario de historia.';
+
+            const selectedExtras = EXTRAS_META.filter(ex => {
+                const el = document.getElementById(ex.id);
+                return el && el.checked;
+            });
+
+            const extrasSum = selectedExtras.reduce((acc, item) => acc + item.price, 0);
+            const totalMin = pkg.min + extrasSum;
+            const totalMax = pkg.max + extrasSum;
+            const totalText = totalMin === totalMax
+                ? `$${totalMin.toLocaleString('es-MX')} MXN`
+                : `$${totalMin.toLocaleString('es-MX')} – $${totalMax.toLocaleString('es-MX')} MXN`;
+
+            estimatedTotalBadge.textContent = `Est. ${totalText}`;
+
+            const extrasLine = selectedExtras.length > 0
+                ? selectedExtras.map(e => `   • ${e.label} (+$${e.price} MXN)`).join('\n')
+                : '   • Ninguno';
+
+            const fullMessage =
+                `¡Hola Tonathiu Real! 🎵 Quiero cotizar una canción personalizada:\n\n` +
+                `👤 *Nombre:* ${name}\n` +
+                `🎉 *Ocasión / Género:* ${occGenre}\n` +
+                `📦 *Paquete:* ${pkg.label}\n` +
+                `🎙️ *Voz principal:* ${voice}\n` +
+                `✨ *Extras:*\n${extrasLine}\n` +
+                `💰 *Estimado:* ${totalText} (50% anticipo / 50% contra muestra)\n` +
+                `📝 *Historia:* ${story}`;
+
+            messagePreviewEl.textContent = fullMessage;
+            const encodedMsg = encodeURIComponent(fullMessage);
+            const waUrl = `https://wa.me/${WHATSAPP_PHONE}?text=${encodedMsg}`;
+            whatsappDirectBtn.href = waUrl;
+            whatsappFloatingBtn.href = `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent('¡Hola Tonathiu Real! Quiero información para una canción personalizada 🎵')}`;
+        }
+
+        // Asegurar apertura directa de WhatsApp al hacer clic en botones de WhatsApp
+        function openWhatsAppUrl(url) {
+            const opened = window.open(url, '_blank', 'noopener,noreferrer');
+            if (!opened) {
+                window.location.href = url;
+            }
+        }
+
+        whatsappDirectBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            updateQuoteMessage();
+            openWhatsAppUrl(whatsappDirectBtn.href);
+        });
+
+        whatsappFloatingBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            updateQuoteMessage();
+            openWhatsAppUrl(whatsappFloatingBtn.href);
+        });
+
+        [clientNameEl, occasionGenreEl, packageSelectEl, voiceOptionEl, storySnippetEl].forEach(el => {
+            el.addEventListener('input', updateQuoteMessage);
+            el.addEventListener('change', updateQuoteMessage);
+        });
+
+        document.querySelectorAll('.extra-checkbox').forEach(cb => {
+            cb.addEventListener('change', updateQuoteMessage);
+        });
+
+        function selectPackageAndScroll(pkgKey) {
+            packageSelectEl.value = pkgKey;
+            updateQuoteMessage();
+            document.getElementById('cotizar').scrollIntoView({ behavior: 'smooth' });
+            showToast(`Seleccionaste: ${PACKAGE_META[pkgKey].label}`);
+        }
+
+        function selectExtraAndScroll(extraType) {
+            const map = {
+                voz: 'extraVoz',
+                express: 'extraExpress',
+                instrumental: 'extraInstrumental',
+                segundaVersion: 'extraSegundaVersion'
+            };
+            const checkboxId = map[extraType];
+            if (checkboxId) {
+                const cb = document.getElementById(checkboxId);
+                cb.checked = true;
+                updateQuoteMessage();
+                document.getElementById('cotizar').scrollIntoView({ behavior: 'smooth' });
+                showToast('Extra agregado a tu cotización');
+            }
+        }
+
+        function copyMessageToClipboard() {
+            const textToCopy = messagePreviewEl.textContent;
+            const tempTextArea = document.createElement('textarea');
+            tempTextArea.value = textToCopy;
+            document.body.appendChild(tempTextArea);
+            tempTextArea.select();
+            try {
+                document.execCommand('copy');
+                showToast('¡Mensaje copiado! Listo para pegar en WhatsApp.');
+            } catch (err) {
+                showToast('Selecciona el texto y cópialo manualmente.');
+            }
+            document.body.removeChild(tempTextArea);
+        }
+
+        function showToast(msg) {
+            const toast = document.getElementById('toast');
+            const toastText = document.getElementById('toastText');
+            toastText.textContent = msg;
+            toast.classList.remove('translate-y-20', 'opacity-0');
+            setTimeout(() => {
+                toast.classList.add('translate-y-20', 'opacity-0');
+            }, 3000);
+        }
+
+        document.querySelectorAll('.accordion-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const content = btn.nextElementSibling;
+                const icon = btn.querySelector('i');
+                const isOpen = !content.classList.contains('hidden');
+
+                document.querySelectorAll('.accordion-content').forEach(c => c.classList.add('hidden'));
+                document.querySelectorAll('.accordion-btn i').forEach(i => i.classList.remove('rotate-180'));
+
+                if (!isOpen) {
+                    content.classList.remove('hidden');
+                    icon.classList.add('rotate-180');
+                }
+            });
+        });
+
+        window.addEventListener('DOMContentLoaded', () => {
+            updateQuoteMessage();
+        });
+    </script>
+</body>
+</html>
